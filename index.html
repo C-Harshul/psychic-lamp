@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Numina - Agents Can Act. Numina Makes It Safe.</title>
+    <meta name="title" content="Numina - Agents Can Act. Numina Makes It Safe.">
+    <meta name="description" content="The payment layer for AI agents. Set rules, bind them to agents. Every payment justified, enforced, and audited.">
+    <meta name="keywords" content="AI agents, payment infrastructure, agentic payments, programmatic payments, API payments, agent spending, fintech">
+    <meta name="author" content="Numina Technologies Inc">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paywithnumina.com">
+    <meta property="og:title" content="Numina - Agents Can Act. Numina Makes It Safe.">
+    <meta property="og:description" content="The payment layer for AI agents. Set rules, bind them to agents. Every payment justified, enforced, and audited.">
+    <meta property="og:image" content="./og-image.png">
+    <meta property="og:site_name" content="Numina">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://paywithnumina.com/">
+    <meta name="twitter:title" content="Numina - Agents Can Act. Numina Makes It Safe.">
+    <meta name="twitter:description" content="The payment layer for AI agents. Set rules, bind them to agents. Every payment justified, enforced, and audited.">
+    <meta name="twitter:image" content="./og-image.png">
+    <meta name="twitter:site" content="@paywithnumina">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#4101f6">
+    <meta name="msapplication-TileColor" content="#4101f6">
+
+    <link rel="stylesheet" href="./assets/index-cxcEbLjJ.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1b1b1c;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+        }
+
+        .section-spacing {
+            padding: 80px 0;
+        }
+
+        @media (min-width: 768px) {
+            .section-spacing {
+                padding: 120px 0;
+            }
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            padding: 32px;
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: #4101f6;
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #4101f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .label-dot {
+            width: 8px;
+            height: 8px;
+            background: #c2bbff;
+            border: 1px solid #4101f6;
+            flex-shrink: 0;
+        }
+
+        .label-text {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #505153;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            color: #1b1b1c;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 32px;
+            }
+        }
+
+        .subtitle {
+            font-size: 18px;
+            font-weight: 300;
+            color: #505153;
+            max-width: 600px;
+            margin-bottom: 64px;
+        }
+
+        @media (max-width: 768px) {
+            .subtitle {
+                font-size: 15px;
+                margin-bottom: 48px;
+            }
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-4 {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+        }
+
+        @media (min-width: 1024px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .border-top {
+            border-top: 1px solid #e5e5e5;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 400;
+            color: #1b1b1c;
+            margin-bottom: 12px;
+        }
+
+        .card-text {
+            font-size: 15px;
+            font-weight: 300;
+            color: #505153;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .card-text {
+                font-size: 14px;
+            }
+        }
+
+        .security-item {
+            border: 1px solid #e5e5e5;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .security-header {
+            font-size: 24px;
+            font-weight: 400;
+            color: #1b1b1c;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .badge {
+            padding: 6px 12px;
+            font-size: 11px;
+            border: 1px solid;
+        }
+
+        .badge-success {
+            background: #c2bbff;
+            color: #4101f6;
+            border-color: #4101f6;
+        }
+
+        .badge-neutral {
+            background: #ffffff;
+            color: #505153;
+            border-color: #e5e5e5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header style="position: absolute; top: 0; left: 0; right: 0; z-index: 50; padding: 32px 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto;">
+            <a href="#" style="text-decoration: none;">
+                <img src="data:image/svg+xml,%3csvg%20width='160'%20height='26'%20viewBox='0%200%20160%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ctext%20x='0'%20y='20'%20font-family='Arial,%20sans-serif'%20font-size='22'%20font-weight='bold'%20fill='%231B1B1C'%3eNUMINA%3c/text%3e%3c/svg%3e" alt="Numina" style="height: 26px;">
+            </a>
+            <a href="#" style="background: #c2bbff; border: 1px solid #4101f6; color: #4101f6; padding: 14px 24px; font-size: 14px; text-decoration: none; transition: background 0.3s;">Launch App</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section style="padding: 160px 24px 80px; background: #ffffff;">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <div style="max-width: 700px; margin-bottom: 48px;">
+                <h1 style="font-size: 84px; font-weight: 300; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 32px;">
+                    <span style="display: block; color: #1b1b1c;">Books close themselves.</span>
+                    <span style="display: block; color: #a8a8a8;">Numina makes it right.</span>
+                </h1>
+                <p style="font-size: 18px; font-weight: 300; color: #505153; line-height: 1.5;">
+                    AI agents that reconcile, flag, and research—so you can advise.
+                </p>
+            </div>
+
+            <div>
+                <a href="#" style="border: 1px solid #4101f6; color: #4101f6; padding: 12px 24px; font-size: 14px; text-decoration: none; transition: background 0.3s;">Get Early Access</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="section-spacing">
+        <div class="container">
+            <div style="max-width: 600px;">
+                <div class="label">
+                    <div class="label-dot"></div>
+                    <p style="font-size: 24px; color: #1b1b1c;">Real-time reconciliation. Zero grunt work.</p>
+                </div>
+                <div style="margin-left: 20px;">
+                    <p style="font-size: 18px; font-weight: 300; color: #505153; line-height: 1.5; margin-bottom: 36px;">
+                        You set the rules. Agents do the work. Full audit trail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="section-spacing border-top">
+        <div class="container">
+            <div class="label">
+                <div class="label-dot"></div>
+                <p class="label-text">Three Pillars</p>
+            </div>
+            <h2>How it works</h2>
+            <p class="subtitle">Minimal icons, maximum impact</p>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h3>Reconcile</h3>
+                    <p class="card-text">Invoices to ledger. Automatically.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+                    </div>
+                    <h3>Flag</h3>
+                    <p class="card-text">Your rules. Enforced before audit.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <h3>Research</h3>
+                    <p class="card-text">Every regulation. Instantly searchable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Numina Section -->
+    <section class="section-spacing border-top">
+        <div class="container">
+            <div class="label">
+                <div class="label-dot"></div>
+                <p class="label-text">Overview</p>
+            </div>
+            <h2>Why Numina</h2>
+            <p class="subtitle">Enterprise-grade payment infrastructure for the age of autonomous agents</p>
+
+            <div class="grid-4">
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" x2="14" y1="2" y2="2"></line><line x1="12" x2="15" y1="14" y2="11"></line><circle cx="12" cy="14" r="8"></circle></svg>
+                    </div>
+                    <h3>Policy Enforcement</h3>
+                    <p class="card-text">Every payment is automatically checked against your rules. No exceptions, no overrides.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+                    </div>
+                    <h3>Complete Audit Trail</h3>
+                    <p class="card-text">Track every transaction with full context: who, what, when, why, and policy compliance.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+                    </div>
+                    <h3>Real-time Control</h3>
+                    <p class="card-text">Adjust spending limits and policies on the fly. Changes apply instantly across all agents.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2"></rect><path d="M7 11v4a2 2 0 0 0 2 2h4"></path><rect width="8" height="8" x="13" y="13" rx="2"></rect></svg>
+                    </div>
+                    <h3>Seamless Integration</h3>
+                    <p class="card-text">Simple API connects to any agent framework. Built for developers, used by agents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="section-spacing border-top">
+        <div class="container">
+            <div class="label">
+                <div class="label-dot"></div>
+                <p class="label-text">Security & Compliance</p>
+            </div>
+            <h2>Enterprise-grade security</h2>
+            <p class="subtitle" style="max-width: 700px;">Your data security is our highest priority. We implement comprehensive protection measures and meet industry standards for data protection.</p>
+
+            <div class="grid-2">
+                <div>
+                    <h3 class="security-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+                        Data Protection
+                    </h3>
+
+                    <div class="security-item">
+                        <div style="display: flex; gap: 16px;">
+                            <div style="width: 8px; height: 8px; background: #4101f6; margin-top: 6px; flex-shrink: 0;"></div>
+                            <div>
+                                <h4 style="font-size: 15px; font-weight: 400; color: #1b1b1c; margin-bottom: 4px;">No Training on Your Data</h4>
+                                <p style="font-size: 13px; font-weight: 300; color: #505153; line-height: 1.6;">We never use customer data for training AI models</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="security-item">
+                        <div style="display: flex; gap: 16px;">
+                            <div style="width: 8px; height: 8px; background: #4101f6; margin-top: 6px; flex-shrink: 0;"></div>
+                            <div>
+                                <h4 style="font-size: 15px; font-weight: 400; color: #1b1b1c; margin-bottom: 4px;">Full Encryption</h4>
+                                <p style="font-size: 13px; font-weight: 300; color: #505153; line-height: 1.6;">All data encrypted in transit and at rest with AES-256</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="security-item">
+                        <div style="display: flex; gap: 16px;">
+                            <div style="width: 8px; height: 8px; background: #4101f6; margin-top: 6px; flex-shrink: 0;"></div>
+                            <div>
+                                <h4 style="font-size: 15px; font-weight: 400; color: #1b1b1c; margin-bottom: 4px;">EU Data Residency</h4>
+                                <p style="font-size: 13px; font-weight: 300; color: #505153; line-height: 1.6;">European data stored exclusively in EU data centers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="security-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        Certifications
+                    </h3>
+
+                    <div class="security-item" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 40px; height: 40px; border: 1px solid #4101f6; display: flex; align-items: center; justify-content: center; color: #4101f6; font-size: 11px; font-weight: 600;">ISO</div>
+                            <h4 style="font-size: 15px; font-weight: 400; color: #1b1b1c;">ISO 27001</h4>
+                        </div>
+                        <span class="badge badge-success">Certified</span>
+                    </div>
+
+                    <div class="security-item" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 40px; height: 40px; border: 1px solid #4101f6; display: flex; align-items: center; justify-content: center; color: #4101f6; font-size: 10px; font-weight: 600;">GDPR</div>
+                            <h4 style="font-size: 15px; font-weight: 400; color: #1b1b1c;">GDPR</h4>
+                        </div>
+                        <span class="badge badge-success">Compliant</span>
+                    </div>
+
+                    <div class="security-item" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 40px; height: 40px; border: 1px solid #4101f6; display: flex; align-items: center; justify-content: center; color: #4101f6; font-size: 11px; font-weight: 600;">SOC</div>
+                            <h4 style="font-size: 15px; font-weight: 400; color: #1b1b1c;">SOC 2 Type 2</h4>
+                        </div>
+                        <span class="badge badge-neutral">Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="border-top: 1px solid #e5e5e5; padding: 56px 24px; background: #ffffff;">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: start;">
+            <div>
+                <img src="data:image/svg+xml,%3csvg%20width='160'%20height='26'%20viewBox='0%200%20160%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ctext%20x='0'%20y='20'%20font-family='Arial,%20sans-serif'%20font-size='22'%20font-weight='bold'%20fill='%231B1B1C'%3eNUMINA%3c/text%3e%3c/svg%3e" alt="Numina" style="height: 26px; margin-bottom: 32px;">
+                <img src="./newimg.png" alt="Footer graphic" style="max-width: 400px; height: auto;">
+            </div>
+
+            <div style="display: flex; gap: 100px; padding-top: 40px;">
+                <div>
+                    <h4 style="font-size: 18px; color: #1b1b1c; margin-bottom: 24px;">Resources</h4>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <a href="blog.html" style="font-size: 14px; font-weight: 300; color: #505153; text-decoration: none;">Blog</a>
+                        <a href="mailto:founders@paywithnumina.com" style="font-size: 14px; font-weight: 300; color: #505153; text-decoration: none;">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="font-size: 18px; color: #1b1b1c; margin-bottom: 24px;">Legal</h4>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <a href="#" style="font-size: 14px; font-weight: 300; color: #505153; text-decoration: none;">Privacy Policy</a>
+                        <a href="#" style="font-size: 14px; font-weight: 300; color: #505153; text-decoration: none;">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div style="padding-top: 64px; display: flex; gap: 16px;">
+                    <a href="https://x.com/paywithnumina" target="_blank" style="opacity: 0.7; transition: opacity 0.3s;">
+                        <img src="data:image/svg+xml,%3csvg%20width='22'%20height='22'%20viewBox='0%200%2022%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2362_30550)'%3e%3cpath%20d='M13.0951%209.31654L21.2865%200H19.3461L12.2305%208.08777L6.5516%200H0L8.58953%2012.2313L0%2021.9999H1.9404L9.44973%2013.4571L15.4484%2021.9999H22M2.64073%201.43174H5.62173L19.3446%2020.6385H16.3629'%20fill='%23505153'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2362_30550'%3e%3crect%20width='22'%20height='22'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="X" style="height: 20px;">
+                    </a>
+                    <a href="https://www.linkedin.com/company/paywithnumina" target="_blank" style="opacity: 0.7; transition: opacity 0.3s;">
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='23'%20viewBox='0%200%2024%2023'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.9287%209.04102C13.7992%207.43036%2016.1849%206.47293%2018.4229%206.85742C19.5183%207.0457%2020.5354%207.55244%2021.2783%208.4248C22.0188%209.29428%2022.5225%2010.5691%2022.5225%2012.3584V21.5625H18.7822V14.0215C18.7822%2012.7032%2018.3871%2011.6781%2017.7354%2010.9844C17.0843%2010.2916%2016.2123%209.96864%2015.3457%209.99609C13.591%2010.0519%2011.9434%2011.5208%2011.9434%2014.0215V21.5625H8.2207V7.24707H11.9424V8.79199L12.9287%209.04102ZM4.27637%207.24707V21.5625H0.524414V7.24707H4.27637ZM2.40039%200.524414C3.42192%200.524414%204.2576%201.36108%204.25781%202.40039C4.25781%203.44071%203.42219%204.27637%202.40039%204.27637C1.37878%204.27615%200.543945%203.44058%200.543945%202.40039C0.544161%201.36122%201.37905%200.524634%202.40039%200.524414Z'%20fill='%23505153'%20stroke='%23505153'%20stroke-width='1.0497'/%3e%3c/svg%3e" alt="LinkedIn" style="height: 20px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

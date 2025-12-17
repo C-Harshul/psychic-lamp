@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Blog - Numina</title>
+    <meta name="title" content="Blog - Numina">
+    <meta name="description" content="Insights on the future of agentic payments">
+    <meta name="keywords" content="AI agents, payment infrastructure, agentic payments, blog, insights">
+    <meta name="author" content="Numina Technologies Inc">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paywithnumina.com/blog">
+    <meta property="og:title" content="Blog - Numina">
+    <meta property="og:description" content="Insights on the future of agentic payments">
+    <meta property="og:image" content="./og-image.png">
+    <meta property="og:site_name" content="Numina">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://paywithnumina.com/blog">
+    <meta name="twitter:title" content="Blog - Numina">
+    <meta name="twitter:description" content="Insights on the future of agentic payments">
+    <meta name="twitter:image" content="./og-image.png">
+    <meta name="twitter:site" content="@paywithnumina">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#4101f6">
+    <meta name="msapplication-TileColor" content="#4101f6">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1b1b1c;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+        }
+
+        .section-spacing {
+            padding: 80px 0;
+        }
+
+        @media (min-width: 768px) {
+            .section-spacing {
+                padding: 120px 0;
+            }
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            padding: 32px;
+            transition: border-color 0.3s;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+
+        .card:hover {
+            border-color: #4101f6;
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #4101f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .label-dot {
+            width: 8px;
+            height: 8px;
+            background: #c2bbff;
+            border: 1px solid #4101f6;
+            flex-shrink: 0;
+        }
+
+        .label-text {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #505153;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: 300;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            color: #1b1b1c;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 42px;
+            }
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            color: #1b1b1c;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 32px;
+            }
+        }
+
+        .subtitle {
+            font-size: 18px;
+            font-weight: 300;
+            color: #505153;
+            max-width: 600px;
+            margin-bottom: 64px;
+        }
+
+        @media (max-width: 768px) {
+            .subtitle {
+                font-size: 15px;
+                margin-bottom: 48px;
+            }
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        @media (min-width: 768px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .blog-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .blog-post-card {
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            transition: border-color 0.3s;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .blog-post-card:hover {
+            border-color: #4101f6;
+        }
+
+        .blog-post-icon {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #c2bbff;
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blog-post-content {
+            padding: 32px;
+        }
+
+        .blog-post-date {
+            font-size: 13px;
+            color: #505153;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .blog-post-title {
+            font-size: 20px;
+            font-weight: 400;
+            color: #1b1b1c;
+            margin-bottom: 12px;
+        }
+
+        .blog-post-excerpt {
+            font-size: 15px;
+            font-weight: 300;
+            color: #505153;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .blog-post-link {
+            font-size: 14px;
+            color: #4101f6;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            color: #505153;
+            text-decoration: none;
+            margin-bottom: 48px;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #4101f6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header style="position: absolute; top: 0; left: 0; right: 0; z-index: 50; padding: 32px 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto;">
+            <a href="index.html" style="text-decoration: none;">
+                <img src="data:image/svg+xml,%3csvg%20width='160'%20height='26'%20viewBox='0%200%20160%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ctext%20x='0'%20y='20'%20font-family='Arial,%20sans-serif'%20font-size='22'%20font-weight='bold'%20fill='%231B1B1C'%3eNUMINA%3c/text%3e%3c/svg%3e" alt="Numina" style="height: 26px;">
+            </a>
+            <a href="#" style="background: #c2bbff; border: 1px solid #4101f6; color: #4101f6; padding: 14px 24px; font-size: 14px; text-decoration: none; transition: background 0.3s;">Launch App</a>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section style="padding: 160px 24px 80px; background: #ffffff;">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <a href="index.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                Back to Home
+            </a>
+
+            <h1>Blog</h1>
+            <p class="subtitle">
+                Insights on the future of agentic payments
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="section-spacing" style="padding-top: 0;">
+        <div style="max-width: 1400px; margin: 0 auto; padding: 0 24px;">
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <a href="#" class="blog-post-card">
+                    <div class="blog-post-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-date">October 2025</div>
+                        <h3 class="blog-post-title">Agent Day Demo at Y Combinator</h3>
+                        <p class="blog-post-excerpt">
+                            We demoed Numina at Y Combinator's Agent Day, showcasing how our platform enables true AI autonomy through seamless payment integration. See what we built.
+                        </p>
+                        <span class="blog-post-link">
+                            Read on LinkedIn
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Blog Post 2 -->
+                <a href="#" class="blog-post-card">
+                    <div class="blog-post-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-date">October 2025</div>
+                        <h3 class="blog-post-title">Agentic Commerce Protocol Demo</h3>
+                        <p class="blog-post-excerpt">
+                            Open-source demonstration of OpenAI's and Stripe's agentic commerce protocol. Explore how AI agents autonomously handle payments and transactions through our payment infrastructure.
+                        </p>
+                        <span class="blog-post-link">
+                            View on GitHub
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Blog Post 3 -->
+                <a href="#" class="blog-post-card">
+                    <div class="blog-post-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4101f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-date">September 2025</div>
+                        <h3 class="blog-post-title">Y Combinator F25 Batch Announcement</h3>
+                        <p class="blog-post-excerpt">
+                            We're thrilled to announce that Numina has been accepted into Y Combinator's F25 batch! Join us on our journey to build the payment layer for the agentic web.
+                        </p>
+                        <span class="blog-post-link">
+                            Read on LinkedIn
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="border-top: 1px solid #e5e5e5; padding: 56px 24px; background: #ffffff;">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: start;">
+            <div>
+                <img src="data:image/svg+xml,%3csvg%20width='160'%20height='26'%20viewBox='0%200%20160%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ctext%20x='0'%20y='20'%20font-family='Arial,%20sans-serif'%20font-size='22'%20font-weight='bold'%20fill='%231B1B1C'%3eNUMINA%3c/text%3e%3c/svg%3e" alt="Numina" style="height: 26px; margin-bottom: 32px;">
+                <img src="./newimg.png" alt="Footer graphic" style="max-width: 400px; height: auto;">
+            </div>
+
+            <div style="display: flex; gap: 100px; padding-top: 40px;">
+                <div>
+                    <h4 style="font-size: 18px; color: #1b1b1c; margin-bottom: 24px;">Resources</h4>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <a href="blog.html" style="font-size: 14px; font-weight: 300; color: #505153; text-decoration: none;">Blog</a>
+                        <a href="mailto:founders@paywithnumina.com" style="font-size: 14px; font-weight: 300; color: #505153; text-decoration: none;">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="font-size: 18px; color: #1b1b1c; margin-bottom: 24px;">Legal</h4>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <a href="#" style="font-size: 14px; font-weight: 300; color: #505153; text-decoration: none;">Privacy Policy</a>
+                        <a href="#" style="font-size: 14px; font-weight: 300; color: #505153; text-decoration: none;">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div style="padding-top: 64px; display: flex; gap: 16px;">
+                    <a href="https://x.com/paywithnumina" target="_blank" style="opacity: 0.7; transition: opacity 0.3s;">
+                        <img src="data:image/svg+xml,%3csvg%20width='22'%20height='22'%20viewBox='0%200%2022%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2362_30550)'%3e%3cpath%20d='M13.0951%209.31654L21.2865%200H19.3461L12.2305%208.08777L6.5516%200H0L8.58953%2012.2313L0%2021.9999H1.9404L9.44973%2013.4571L15.4484%2021.9999H22M2.64073%201.43174H5.62173L19.3446%2020.6385H16.3629'%20fill='%23505153'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2362_30550'%3e%3crect%20width='22'%20height='22'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="X" style="height: 20px;">
+                    </a>
+                    <a href="https://www.linkedin.com/company/paywithnumina" target="_blank" style="opacity: 0.7; transition: opacity 0.3s;">
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='23'%20viewBox='0%200%2024%2023'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.9287%209.04102C13.7992%207.43036%2016.1849%206.47293%2018.4229%206.85742C19.5183%207.0457%2020.5354%207.55244%2021.2783%208.4248C22.0188%209.29428%2022.5225%2010.5691%2022.5225%2012.3584V21.5625H18.7822V14.0215C18.7822%2012.7032%2018.3871%2011.6781%2017.7354%2010.9844C17.0843%2010.2916%2016.2123%209.96864%2015.3457%209.99609C13.591%2010.0519%2011.9434%2011.5208%2011.9434%2014.0215V21.5625H8.2207V7.24707H11.9424V8.79199L12.9287%209.04102ZM4.27637%207.24707V21.5625H0.524414V7.24707H4.27637ZM2.40039%200.524414C3.42192%200.524414%204.2576%201.36108%204.25781%202.40039C4.25781%203.44071%203.42219%204.27637%202.40039%204.27637C1.37878%204.27615%200.543945%203.44058%200.543945%202.40039C0.544161%201.36122%201.37905%200.524634%202.40039%200.524414Z'%20fill='%23505153'%20stroke='%23505153'%20stroke-width='1.0497'/%3e%3c/svg%3e" alt="LinkedIn" style="height: 20px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
